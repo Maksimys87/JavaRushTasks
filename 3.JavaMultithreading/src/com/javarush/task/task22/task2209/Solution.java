@@ -11,6 +11,6 @@ public class Solution {
     }
 
     public static StringBuilder getLine(String... words) {
-          return null;
+        return null;
     }
 }

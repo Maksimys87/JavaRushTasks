@@ -16,8 +16,7 @@ public class Solution {
         String fileName = null;
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             fileName = reader.readLine();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         ArrayList<String> list = new ArrayList<>();
@@ -25,8 +24,7 @@ public class Solution {
             while (reader.ready()) {
                 list.addAll(Arrays.asList(reader.readLine().split(" ")));
             }
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
@@ -38,7 +36,7 @@ public class Solution {
                 String temp = iterator.next();
                 if (rev.equals(temp)) {
                     StringBuilder sb = new StringBuilder(rev);
-                    result.add(new Pair(sb.reverse().toString(),temp));
+                    result.add(new Pair(sb.reverse().toString(), temp));
                     iterator.remove();
                 }
             }
@@ -54,7 +52,7 @@ public class Solution {
                 }
             }
         }*/
-        for (Pair p:result) {
+        for (Pair p : result) {
             System.out.println(p.toString());
         }
     }
@@ -92,7 +90,7 @@ public class Solution {
 
         @Override
         public String toString() {
-            return  first == null && second == null ? "" :
+            return first == null && second == null ? "" :
                     first == null && second != null ? second :
                             second == null && first != null ? first :
                                     first.compareTo(second) < 0 ? first + " " + second : second + " " + first;
