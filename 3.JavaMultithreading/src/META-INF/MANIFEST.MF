@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: com.javarush.task.task23.task2312.Room
+
