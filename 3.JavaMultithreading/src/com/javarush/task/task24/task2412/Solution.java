@@ -41,40 +41,31 @@ public class Solution {
     }
 
     public static void sort(List<Stock> list) {
-        Collections.sort(list, new Comparator<Stock>(){
-            public int compare(Stock stock1, Stock stock2) {
-                String s = (String)stock1.get("name");
-                String s1 = (String)stock2.get("name");
-                int m = Integer.compare (((Date)stock1.get("date")).getMonth(),((Date)stock2.get("date")).getMonth());
-                int y = Integer.compare (((Date)stock1.get("date")).getYear(),((Date)stock2.get("date")).getYear());
-                int d = Integer.compare (((Date)stock1.get("date")).getDate(),((Date)stock2.get("date")).getDate());
-                int datecom;
-                if (y != 0)datecom = y;
-                else if (m != 0) datecom = m;
-                else datecom = d;
-                double d1;
-                if (stock1.containsKey("open") && stock1.containsKey("last")) d1 = (double)stock1.get("last") - (double)stock1.get("open");
-                else d1 = (double)stock1.get("change");
-                double d2;
-                if (stock2.containsKey("open") && stock2.containsKey("last")) d2 = (double)stock2.get("last") - (double)stock2.get("open");
-                else d2 = (double)stock2.get("change");
-                if (s.compareTo(s1) != 0) return s.compareTo(s1);
-                else
-                    if (datecom != 0) return -datecom;
-                else
-                    return Double.compare(d2,d1);
-            }
-        }
-        /*.thenComparing(new Comparator<Stock>() {
-            @Override
-            public int compare(Stock o1, Stock o2) {
-                long l = (long)o1.get("date");
-                long l1 = (long)o2.get("date");
-                double d1 = o1.containsKey("open") ? (double)o1.get("last") - (double)o1.get("open") : (double)o1.get("change");
-                double d2 = o2.containsKey("open") ? (double)o2.get("last") - (double)o2.get("open") : (double)o2.get("change");
-                return Long.compare(l,l1) == 0 ? Double.compare(d1,d2) : Long.compare(l,l1);
-            }
-        })*/
+        Collections.sort(list, new Comparator<Stock>() {
+                    public int compare(Stock stock1, Stock stock2) {
+                        String s = (String) stock1.get("name");
+                        String s1 = (String) stock2.get("name");
+                        int m = Integer.compare(((Date) stock1.get("date")).getMonth(), ((Date) stock2.get("date")).getMonth());
+                        int y = Integer.compare(((Date) stock1.get("date")).getYear(), ((Date) stock2.get("date")).getYear());
+                        int d = Integer.compare(((Date) stock1.get("date")).getDate(), ((Date) stock2.get("date")).getDate());
+                        int datecom;
+                        if (y != 0) datecom = y;
+                        else if (m != 0) datecom = m;
+                        else datecom = d;
+                        double d1;
+                        if (stock1.containsKey("open") && stock1.containsKey("last"))
+                            d1 = (double) stock1.get("last") - (double) stock1.get("open");
+                        else d1 = (double) stock1.get("change");
+                        double d2;
+                        if (stock2.containsKey("open") && stock2.containsKey("last"))
+                            d2 = (double) stock2.get("last") - (double) stock2.get("open");
+                        else d2 = (double) stock2.get("change");
+                        if (s.compareTo(s1) != 0) return s.compareTo(s1);
+                        else if (datecom != 0) return -datecom;
+                        else
+                            return Double.compare(d2, d1);
+                    }
+                }
         );
     }
 

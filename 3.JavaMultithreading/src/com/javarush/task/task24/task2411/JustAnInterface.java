@@ -7,6 +7,7 @@ public interface JustAnInterface {
         static {
             System.out.print("st");
         }
+
         public B() {
             System.out.print("B");
         }

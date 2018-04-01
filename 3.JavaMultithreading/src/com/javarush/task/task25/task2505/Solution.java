@@ -8,11 +8,6 @@ public class Solution {
     public static void main(String[] args) {
         MyThread myThread = new Solution().new MyThread("super secret key");
         myThread.start();
-       /* try {
-            Thread.sleep(600);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
     }
 
     public class MyThread extends Thread {
@@ -21,8 +16,9 @@ public class Solution {
         public MyThread(String secretKey) {
             this.secretKey = secretKey;
             setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
-           // setDaemon(true);
+            // setDaemon(true);
         }
+
         private class MyUncaughtExceptionHandler implements UncaughtExceptionHandler {
             public MyUncaughtExceptionHandler() {
             }
@@ -31,7 +27,7 @@ public class Solution {
             public void uncaughtException(Thread t, Throwable e) {
                 try {
                     Thread.sleep(500);
-                    System.out.println(String.format("%s, %s, %s",secretKey,t.getName(),e.getMessage()));
+                    System.out.println(String.format("%s, %s, %s", secretKey, t.getName(), e.getMessage()));
                 } catch (InterruptedException e1) {
                     e1.printStackTrace();
                 }

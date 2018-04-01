@@ -21,7 +21,7 @@ public class Solution {
             wheels = new ArrayList<>();
             if (loadWheelNamesFromDB().length != 4) throw new IllegalArgumentException();
             try {
-                for (String s:loadWheelNamesFromDB()) {
+                for (String s : loadWheelNamesFromDB()) {
                     wheels.add(Wheel.valueOf(s));
                 }
             } catch (Exception e) {

@@ -17,10 +17,9 @@ public class Solution extends TimerTask {
         this.handler = new Thread.UncaughtExceptionHandler() {
             @Override
             public void uncaughtException(Thread t, Throwable e) {
-              // System.out.println(e.getMessage());
-                System.out.println(e.getMessage().replace(t.getName(),t.getName().replaceAll(".","*")));
+                System.out.println(e.getMessage().replace(t.getName(), t.getName().replaceAll(".", "*")));
             }
-        };    //init handler here
+        };
     }
 
     public void run() {
@@ -44,7 +43,7 @@ public class Solution extends TimerTask {
         Solution solution = new Solution(new TimerTask() {
             @Override
             public void run() {
-                int i = 1/0;
+                int i = 1 / 0;
             }
         });
         solution.run();

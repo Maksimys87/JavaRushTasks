@@ -14,7 +14,7 @@ public enum Column implements Columnable {
     private static int[] realOrder;
 
     private Column(String columnName) {
-       this.columnName = columnName;
+        this.columnName = columnName;
     }
 
     /**
@@ -41,7 +41,6 @@ public enum Column implements Columnable {
             }
         }
     }
-
 
 
     /**
@@ -75,7 +74,7 @@ public enum Column implements Columnable {
     @Override
     public void hide() {
         realOrder[this.ordinal()] = -1;
-        for (int i = this.ordinal()+1; i < realOrder.length; i++) {
+        for (int i = this.ordinal() + 1; i < realOrder.length; i++) {
             if (realOrder[i] != 0) {
                 realOrder[i] -= 1;
             }

@@ -8,22 +8,22 @@ public class Solution {
         for (Thread thread : threads) {
             String s = thread.getState().toString();
             switch (s) {
-                case "NEW" :
+                case "NEW":
                     thread.start();
                     break;
-                case "RUNNABLE" :
+                case "RUNNABLE":
                     thread.isInterrupted();
                     break;
-                case "BLOCKED" :
+                case "BLOCKED":
                     thread.interrupt();
                     break;
-                case "WAITING" :
+                case "WAITING":
                     thread.interrupt();
                     break;
-                case "TIMED_WAITING" :
+                case "TIMED_WAITING":
                     thread.interrupt();
                     break;
-                case "TERMINATED" :
+                case "TERMINATED":
                     System.out.println(thread.getPriority());
                     break;
             }

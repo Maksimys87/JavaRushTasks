@@ -3,8 +3,7 @@ package com.javarush.task.task25.task2508;
 /* 
 Не валять дурака
 */
-public class Solution
-{
+public class Solution {
     /*
      Output:
      first

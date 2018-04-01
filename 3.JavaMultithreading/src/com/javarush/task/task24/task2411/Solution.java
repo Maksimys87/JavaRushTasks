@@ -8,9 +8,11 @@ public class Solution extends C {
     static {
         System.out.print("1solst1");
     }
+
     {
         System.out.print("2solnst2");
     }
+
     private class A {
         protected String value = "A";
 

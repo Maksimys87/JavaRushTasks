@@ -41,7 +41,8 @@ public class Solution extends Thread {
                     }
                 }
             }
-        } catch (IOException ignored) {}
+        } catch (IOException ignored) {
+        }
     }
 
     public static void main(String[] args) {

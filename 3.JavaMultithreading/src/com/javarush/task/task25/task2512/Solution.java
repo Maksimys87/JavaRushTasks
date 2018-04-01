@@ -13,24 +13,20 @@ public class Solution extends Thread implements Thread.UncaughtExceptionHandler 
     public void uncaughtException(Thread t, Throwable e) {
         t.interrupt();
         List<Throwable> list = new ArrayList<>();
-       /* System.out.println(e.getCause().getCause());
-        System.out.println(e.getCause());
-        System.out.println(e);*/
-        // System.out.println(e);
         Throwable throwable = e;
         while (throwable != null) {
             list.add(throwable);
             throwable = throwable.getCause();
         }
         Collections.reverse(list);
-        for (Throwable tr:list) {
+        for (Throwable tr : list) {
             System.out.println(tr);
         }
     }
 
 
     public void run() {
-         this.uncaughtException(Thread.currentThread(),new Exception("ABC", new RuntimeException("DEF", new IllegalAccessException("GHI"))));
+        this.uncaughtException(Thread.currentThread(), new Exception("ABC", new RuntimeException("DEF", new IllegalAccessException("GHI"))));
     }
 
     public static void main(String[] args) {

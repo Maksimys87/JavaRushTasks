@@ -2,6 +2,7 @@ package com.javarush.task.task25.task2506;
 
 public class LoggingStateThread extends Thread {
     Thread thread;
+
     public LoggingStateThread(Thread thread) {
         this.thread = thread;
         //setDaemon(true);
@@ -18,6 +19,5 @@ public class LoggingStateThread extends Thread {
                 s = s1;
             }
         }
-       // System.out.println(thread.getState());
     }
 }
