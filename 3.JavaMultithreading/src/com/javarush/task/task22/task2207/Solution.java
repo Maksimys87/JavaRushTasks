@@ -1,10 +1,7 @@
 package com.javarush.task.task22.task2207;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
 
 /* 
 Обращенные слова
@@ -13,61 +10,12 @@ public class Solution {
     public static List<Pair> result = new LinkedList<>();
 
     public static void main(String[] args) {
-        String fileName = null;
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
-            fileName = reader.readLine();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        ArrayList<String> list = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            while (reader.ready()) {
-                list.addAll(Arrays.asList(reader.readLine().split(" ")));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        Iterator<String> iterator = list.iterator();
-        while (iterator.hasNext()) {
-            StringBuilder stringBuilder = new StringBuilder(iterator.next());
-            String rev = stringBuilder.reverse().toString();
-            while (iterator.hasNext()) {
-                String temp = iterator.next();
-                if (rev.equals(temp)) {
-                    StringBuilder sb = new StringBuilder(rev);
-                    result.add(new Pair(sb.reverse().toString(), temp));
-                    iterator.remove();
-                }
-            }
-        }
-
-       /* for (String revers:list) {
-            StringBuilder stringBuilder = new StringBuilder(revers);
-            String rev = stringBuilder.reverse().toString();
-            for (int i = 0; i < list.size(); i++) {
-                if (rev.equals(list.get(i))) {
-                    StringBuilder sb = new StringBuilder(rev);
-                    result.add(new Pair(sb.reverse().toString(),list.remove(i)));
-                }
-            }
-        }*/
-        for (Pair p : result) {
-            System.out.println(p.toString());
-        }
     }
 
     public static class Pair {
         String first;
         String second;
-
-        public Pair() {
-        }
-
-        public Pair(String first, String second) {
-            this.first = first;
-            this.second = second;
-        }
 
         @Override
         public boolean equals(Object o) {
