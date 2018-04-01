@@ -1,5 +1,5 @@
 $ cat .gitattributes
-*.rb linguist-language=Java
+*.java linguist-language=Java
 *.xml linguist-documentation
 *.txt linguist-documentation
 special-vendored-path/* linguist-vendored
