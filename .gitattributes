@@ -5,3 +5,7 @@ docs/formatter.rb linguist-documentation=false
 special-vendored-path/* linguist-vendored
 jquery.js linguist-vendored=false
 Api.elm linguist-generated=true
++images/* linguist-vendored
++PSCyr/pscyr0.4d.zip linguist-vendored
++Documents/* linguist-documentation
++*.md linguist-documentation 
