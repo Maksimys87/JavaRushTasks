@@ -3,10 +3,21 @@ package com.javarush.task.task20.task2028;
 import java.io.Serializable;
 import java.util.*;
 
-/* 
-Построй дерево(1)
+/*
+!!!!!!!!!!!!!
+Валидацию прошел немного с другим решением. Этот вариант решения был сделан позже.
+Мне он кажется более правильным и логичным (смотреть картинку по ссылке в условии и выводы в My Tests)
+Вкратце логика реализации:
+При удалении какого-либо элемента дерева, на его место больше нельзя добавить другой элемент.
+При следующем добавлении, элемент добавляется на следующее свободное место в дереве.
+В случае, если возникнет ситуация, когда в дерево больше нельзя добавить ни одного элемента
+(например, при удалении левого и правого поддерева у корневого элемента), запрет на добавление сбрасывается у всех элементов дерева
+и можно снова добавлять элементы в дерево по порядку.
+Не знаю или такое решение пройдет валидацию!
+!!!!!!!!!!!!
 */
-public class CustomTree extends AbstractList<String> implements Cloneable,Serializable {
+
+public class CustomTree extends AbstractList<String> implements Cloneable, Serializable {
     Entry<String> root = new Entry<>("0");
 
     public static void main(String[] args) {
@@ -14,19 +25,16 @@ public class CustomTree extends AbstractList<String> implements Cloneable,Serial
         for (int i = 1; i < 16; i++) {
             list.add(String.valueOf(i));
         }
-       // System.out.println("size:" + list.size() + "; removing 15: " + list.remove("15") + "; size after:" + list.size());
-        //System.out.println("size:" + list.size() + "; removing 14: " + list.remove("14") + "; size after:" + list.size());
-       // System.out.println("size:" + list.size() + "; removing 2: " + list.remove("2") + "; size after:" + list.size());
-       // System.out.println("size:" + list.size() + "; removing 2: " + list.remove("5") + "; size after:" + list.size());
-                           System.out.println(list.size());
-                           System.out.println("Expected 3, actual is " + ((CustomTree) list).getParent("8"));
-                           list.remove("5");
-        //list.remove("3");
-       // list.add("16");
-      //  System.out.println(((CustomTree) list).getParent("16"));
-                           System.out.println("Expected null, actual is " + ((CustomTree) list).getParent("11"));
-                           System.out.println(list.size());
-        /*list.remove("1");
+        System.out.println(list.size());
+        System.out.println("Expected 3, actual is " + ((CustomTree) list).getParent("8"));
+        list.remove("5");
+        System.out.println("Expected null, actual is " + ((CustomTree) list).getParent("11"));
+        System.out.println(list.size());
+
+        // My Tests
+        /*
+        System.out.println(list.size());
+        list.remove("1");
         System.out.println("Expected 7, actual is " + list.size());
         list.add("16");
         System.out.println("Expected 8, actual is " + list.size());
@@ -47,12 +55,13 @@ public class CustomTree extends AbstractList<String> implements Cloneable,Serial
         System.out.println("Expected 17, actual is " + ((CustomTree) list).getParent("20"));
         list.add("21");
         System.out.println("Expected 5, actual is " + list.size());
-        System.out.println("Expected 18, actual is " + ((CustomTree) list).getParent("21"));*/
+        System.out.println("Expected 18, actual is " + ((CustomTree) list).getParent("21"));
+        */
     }
 
     static class Entry<T> implements Serializable {
         String elementName;
-        int lineNumber; // not used
+        int lineNumber;       // not used
         boolean availableToAddLeftChildren, availableToAddRightChildren;
         Entry<T> parent, leftChild, rightChild;
 
@@ -76,61 +85,8 @@ public class CustomTree extends AbstractList<String> implements Cloneable,Serial
     public boolean add(String s) {
         Queue<Entry<String>> queue = new LinkedList<>();
         Entry<String> iter = root;
-            /*if (!iter.isAvailableToAddChildren())
-                queue.add(root);
-            while (!queue.isEmpty()) {
-                Entry<String> temp = queue.poll();
-                if (temp.leftChild != null && temp.leftChild.isAvailableToAddChildren()) {
-                    iter = temp.leftChild;
-                    break;
-                }
-                else {
-                    if (temp.rightChild != null && temp.rightChild.isAvailableToAddChildren()) {
-                        iter = temp.rightChild;
-                        break;
-                    }
-                }
-                if (temp.leftChild != null) {
-                    queue.add(temp.leftChild);             !!!!!!!!!НЕ МОЕ РЕШЕНИЕ!!!!!!!!!!
-                }
-                if (temp.rightChild != null) {
-                    queue.add(temp.rightChild);
-                }
-            }
-            if (iter.availableToAddLeftChildren) {
-            iter.leftChild = entry;
-            iter.leftChild.parent = iter;
-            iter.checkChildren();
-        }
-        else {
-            iter.rightChild = entry;
-            iter.rightChild.parent = iter;
-            iter.checkChildren();
 
-            }*/
-
-       /* while (true) {
-            if (iter.isAvailableToAddChildren()) {
-                if (iter.availableToAddLeftChildren) {
-                    iter.leftChild = new Entry<>(s);
-                    iter.leftChild.parent = iter;
-                    iter.checkChildren();
-                    return true;
-                }
-                if (iter.availableToAddRightChildren) {
-                    iter.rightChild = new Entry<>(s);
-                    iter.rightChild.parent = iter;
-                    iter.checkChildren();
-                    return true;
-                    }
-            }
-            else {
-                if (iter.leftChild != null) queue.add(iter.leftChild);
-                if (iter.rightChild != null) queue.add(iter.rightChild);
-                if (!queue.isEmpty()) iter = queue.poll();
-                else break;
-            }
-        }
+        if (addChildren(queue, iter, s)) return true;
 
         while (true) {
             iter.availableToAddLeftChildren = true;
@@ -142,42 +98,7 @@ public class CustomTree extends AbstractList<String> implements Cloneable,Serial
             else break;
         }
 
-        while (true) {
-            if (iter.isAvailableToAddChildren()) {
-                if (iter.availableToAddLeftChildren) {
-                    iter.leftChild = new Entry<>(s);
-                    iter.leftChild.parent = iter;
-                    iter.checkChildren();
-                    return true;
-                }
-                if (iter.availableToAddRightChildren) {
-                    iter.rightChild = new Entry<>(s);
-                    iter.rightChild.parent = iter;
-                    iter.checkChildren();
-                    return true;
-                }
-            }
-            else {
-                if (iter.leftChild != null) queue.add(iter.leftChild);
-                if (iter.rightChild != null) queue.add(iter.rightChild);
-                if (!queue.isEmpty()) iter = queue.poll();
-                else break;
-            }
-        }*/
-
-        if (addChildren(queue,iter,s)) return true;
-
-        while (true) {
-            iter.availableToAddLeftChildren = true;
-            iter.availableToAddRightChildren = true;
-
-            if (iter.leftChild != null) queue.add(iter.leftChild);
-            if (iter.rightChild != null) queue.add(iter.rightChild);
-            if (!queue.isEmpty()) iter = queue.poll();
-            else break;
-        }
-
-        addChildren(queue,iter,s);
+        addChildren(queue, iter, s);
 
         return false;
     }
@@ -197,8 +118,7 @@ public class CustomTree extends AbstractList<String> implements Cloneable,Serial
                     iter.checkChildren();
                     return true;
                 }
-            }
-            else {
+            } else {
                 if (iter.leftChild != null) queue.add(iter.leftChild);
                 if (iter.rightChild != null) queue.add(iter.rightChild);
                 if (!queue.isEmpty()) iter = queue.poll();
@@ -224,8 +144,7 @@ public class CustomTree extends AbstractList<String> implements Cloneable,Serial
                     iter.parent.availableToAddLeftChildren = false;
                     iter.parent.leftChild = null;
                     return true;
-                }
-                else {
+                } else {
                     iter.parent.availableToAddRightChildren = false;
                     iter.parent.rightChild = null;
                     return true;
