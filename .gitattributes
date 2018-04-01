@@ -1,11 +1,2 @@
-$ cat .gitattributes
-*.rb linguist-language=Java
-project-docs/* linguist-documentation
-docs/formatter.rb linguist-documentation=false
-special-vendored-path/* linguist-vendored
-jquery.js linguist-vendored=false
-Api.elm linguist-generated=true
-+images/* linguist-vendored
-+PSCyr/pscyr0.4d.zip linguist-vendored
-+Documents/* linguist-documentation
-+*.md linguist-documentation 
+* linguist-vendored
+*.java linguist-vendored=false
