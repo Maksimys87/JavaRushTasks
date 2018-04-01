@@ -1,6 +1,7 @@
 $ cat .gitattributes
-*.java linguist-language=Java
-*.xml linguist-documentation
-*.txt linguist-documentation
+*.rb linguist-language=Java
+project-docs/* linguist-documentation
+docs/formatter.rb linguist-documentation=false
 special-vendored-path/* linguist-vendored
 jquery.js linguist-vendored=false
+Api.elm linguist-generated=true
