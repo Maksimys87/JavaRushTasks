@@ -35,7 +35,7 @@ public class View extends JPanel {
 
         if (isGameWon) {
             JOptionPane.showMessageDialog(this, "You've won!");
-        } else if(isGameLost) {
+        } else if (isGameLost) {
             JOptionPane.showMessageDialog(this, "You've lost :(");
         }
     }
@@ -47,7 +47,7 @@ public class View extends JPanel {
         int xOffset = offsetCoors(x);
         int yOffset = offsetCoors(y);
         g.setColor(tile.getTileColor());
-        g.fillRoundRect(xOffset, yOffset, TILE_SIZE, TILE_SIZE , 8, 8);
+        g.fillRoundRect(xOffset, yOffset, TILE_SIZE, TILE_SIZE, 8, 8);
         g.setColor(tile.getFontColor());
         final int size = value < 100 ? 36 : value < 1000 ? 32 : 24;
         final Font font = new Font(FONT_NAME, Font.BOLD, size);

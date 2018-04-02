@@ -18,9 +18,8 @@ public class MoveEfficiency implements Comparable<MoveEfficiency> {
     @Override
     public int compareTo(MoveEfficiency o) {
         if (numberOfEmptyTiles == o.numberOfEmptyTiles) {
-           if (score == o.score) return 0;
-           else return score > o.score ? 1 : -1;
-        }
-        else return numberOfEmptyTiles > o.numberOfEmptyTiles ? 1 : -1;
+            if (score == o.score) return 0;
+            else return score > o.score ? 1 : -1;
+        } else return numberOfEmptyTiles > o.numberOfEmptyTiles ? 1 : -1;
     }
 }

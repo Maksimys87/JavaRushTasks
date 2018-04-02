@@ -45,7 +45,7 @@ public class Controller {
                 currentFile = jFileChooser.getSelectedFile();
                 resetDocument();
                 view.setTitle(currentFile.getName());
-                try(FileReader fileReader = new FileReader(currentFile)) {
+                try (FileReader fileReader = new FileReader(currentFile)) {
                     new HTMLEditorKit().read(fileReader, document, 0);
                 }
                 view.resetUndo();
@@ -63,7 +63,7 @@ public class Controller {
             if (currentFile == null) saveDocumentAs();
             else {
                 view.setTitle(currentFile.getName());
-                try(FileWriter fileWriter = new FileWriter(currentFile)) {
+                try (FileWriter fileWriter = new FileWriter(currentFile)) {
                     new HTMLEditorKit().write(fileWriter, document, 0, document.getLength());
                 }
             }
@@ -83,7 +83,7 @@ public class Controller {
                 System.out.println(document.getLength());
                 currentFile = jFileChooser.getSelectedFile();
                 view.setTitle(currentFile.getName());
-                try(FileWriter fileWriter = new FileWriter(currentFile)) {
+                try (FileWriter fileWriter = new FileWriter(currentFile)) {
                     new HTMLEditorKit().write(fileWriter, document, 0, document.getLength());
                 }
             }
@@ -122,7 +122,7 @@ public class Controller {
     public String getPlainText() {
         try {
             StringWriter stringWriter = new StringWriter();
-            new HTMLEditorKit().write(stringWriter,document,0,document.getLength());
+            new HTMLEditorKit().write(stringWriter, document, 0, document.getLength());
             return stringWriter.toString();
         } catch (IOException e) {
             ExceptionHandler.log(e);

@@ -22,7 +22,7 @@ public class View extends JFrame implements ActionListener {
 
     public View() {
         try {
-            UIManager.setLookAndFeel (UIManager.getSystemLookAndFeelClassName ());
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
             ExceptionHandler.log(e);
         }
@@ -32,17 +32,23 @@ public class View extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         String actionCommand = e.getActionCommand();
         switch (actionCommand) {
-            case "Новый" : controller.createNewDocument();
+            case "Новый":
+                controller.createNewDocument();
                 break;
-            case "Открыть" : controller.openDocument();
+            case "Открыть":
+                controller.openDocument();
                 break;
-            case "Сохранить" : controller.saveDocument();
+            case "Сохранить":
+                controller.saveDocument();
                 break;
-            case "Сохранить как..." : controller.saveDocumentAs();
+            case "Сохранить как...":
+                controller.saveDocumentAs();
                 break;
-            case "Выход" : controller.exit();
+            case "Выход":
+                controller.exit();
                 break;
-            case "О программе" : showAbout();
+            case "О программе":
+                showAbout();
                 break;
         }
     }
@@ -56,26 +62,26 @@ public class View extends JFrame implements ActionListener {
 
     public void initMenuBar() {
         JMenuBar menuBar = new JMenuBar();
-        MenuHelper.initFileMenu(this,menuBar);
-        MenuHelper.initEditMenu(this,menuBar);
-        MenuHelper.initStyleMenu(this,menuBar);
-        MenuHelper.initAlignMenu(this,menuBar);
-        MenuHelper.initColorMenu(this,menuBar);
-        MenuHelper.initFontMenu(this,menuBar);
-        MenuHelper.initHelpMenu(this,menuBar);
-        getContentPane().add(menuBar,BorderLayout.NORTH);
+        MenuHelper.initFileMenu(this, menuBar);
+        MenuHelper.initEditMenu(this, menuBar);
+        MenuHelper.initStyleMenu(this, menuBar);
+        MenuHelper.initAlignMenu(this, menuBar);
+        MenuHelper.initColorMenu(this, menuBar);
+        MenuHelper.initFontMenu(this, menuBar);
+        MenuHelper.initHelpMenu(this, menuBar);
+        getContentPane().add(menuBar, BorderLayout.NORTH);
     }
 
     public void initEditor() {
         htmlTextPane.setContentType("text/html");
         JScrollPane jScrollPaneHtml = new JScrollPane(htmlTextPane);
-        tabbedPane.addTab("HTML",jScrollPaneHtml);
+        tabbedPane.addTab("HTML", jScrollPaneHtml);
         JScrollPane jScrollPaneText = new JScrollPane(plainTextPane);
-        tabbedPane.addTab("Текст",jScrollPaneText);
+        tabbedPane.addTab("Текст", jScrollPaneText);
         tabbedPane.setPreferredSize(null);
         TabbedPaneChangeListener tabbedPaneChangeListener = new TabbedPaneChangeListener(this);
         tabbedPane.addChangeListener(tabbedPaneChangeListener);
-        getContentPane().add(tabbedPane,BorderLayout.CENTER);
+        getContentPane().add(tabbedPane, BorderLayout.CENTER);
     }
 
     public void initGui() {
@@ -86,7 +92,7 @@ public class View extends JFrame implements ActionListener {
 
     public boolean isHtmlTabSelected() {
         if (tabbedPane.getSelectedIndex() == 0)
-        return true;
+            return true;
         return false;
     }
 
@@ -100,7 +106,7 @@ public class View extends JFrame implements ActionListener {
     }
 
     public void showAbout() {
-        JOptionPane.showMessageDialog(this,"My first GUI editor","Information",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "My first GUI editor", "Information", JOptionPane.INFORMATION_MESSAGE);
     }
 
     public void undo() {
@@ -134,8 +140,7 @@ public class View extends JFrame implements ActionListener {
     public void selectedTabChanged() {
         if (tabbedPane.getSelectedIndex() == 0) {
             controller.setPlainText(plainTextPane.getText());
-        }
-        else plainTextPane.setText(controller.getPlainText());
+        } else plainTextPane.setText(controller.getPlainText());
         resetUndo();
     }
 
