@@ -28,7 +28,7 @@ public class Solution {
 
     public Object get(Object key) {
         int hash = hash(key);
-        synchronized (locks[hash%locks.length]) {
+        synchronized (locks[hash % locks.length]) {
             for (Node m = buckets[hash]; m != null; m = m.next) {
                 if (m.key.equals(key)) return m.value;
             }
@@ -38,7 +38,7 @@ public class Solution {
 
     public void clear() {
         for (int i = 0; i < buckets.length; i++) {
-            synchronized (locks[i%locks.length]) {
+            synchronized (locks[i % locks.length]) {
                 buckets[i] = null;
             }
         }

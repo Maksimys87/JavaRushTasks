@@ -14,12 +14,12 @@ public class Solution {
 
     public static void main(String[] args) throws Exception {
         runTaskBySchedule(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("A");
-                throw new RuntimeException("it's test");
-            }
-        }, 1_000, TimeUnit.MILLISECONDS
+                              @Override
+                              public void run() {
+                                  System.out.println("A");
+                                  throw new RuntimeException("it's test");
+                              }
+                          }, 1_000, TimeUnit.MILLISECONDS
         );
 
         interruptScheduledExecutor.shutdown();
