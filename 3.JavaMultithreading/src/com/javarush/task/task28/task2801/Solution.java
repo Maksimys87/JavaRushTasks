@@ -1,7 +1,5 @@
 package com.javarush.task.task28.task2801;
 
-import static com.javarush.task.task28.task2801.Solution.E1.A;
-import static com.javarush.task.task28.task2801.Solution.E1.B;
 
 /*
 Осваиваем switch
@@ -28,10 +26,10 @@ public class Solution {
         String className = obj.getDeclaringClass().getSimpleName();
 
         switch (className) {
-            case "E1" :
+            case "E1":
                 System.out.println("it's E1." + obj);
                 break;
-            case "E2" :
+            case "E2":
                 System.out.println("it's E2." + obj);
                 break;
             default:

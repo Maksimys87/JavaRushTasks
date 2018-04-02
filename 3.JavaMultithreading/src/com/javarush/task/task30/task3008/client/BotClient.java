@@ -13,9 +13,10 @@ public class BotClient extends Client {
         BotClient botClient = new BotClient();
         botClient.run();
     }
+
     @Override
     protected String getUserName() {
-        int x = (int) (Math.random()*100);
+        int x = (int) (Math.random() * 100);
         return "date_bot_" + x;
     }
 

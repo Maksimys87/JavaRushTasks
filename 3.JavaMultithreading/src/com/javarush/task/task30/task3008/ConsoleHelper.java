@@ -14,7 +14,7 @@ public class ConsoleHelper {
     public static String readString() {
         while (true) {
             try {
-               return reader.readLine();
+                return reader.readLine();
             } catch (IOException e) {
                 System.out.println("Произошла ошибка при попытке ввода текста. Попробуйте еще раз.");
             }

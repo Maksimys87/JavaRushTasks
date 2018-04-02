@@ -15,10 +15,10 @@ public class Solution {
         for (int i = 0; i < 10; i++) {
             linkedBlockingQueue.add(() -> doExpensiveOperation(atomicInteger.incrementAndGet()));
         }
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(3,5,1000,TimeUnit.MILLISECONDS,linkedBlockingQueue);
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(3, 5, 1000, TimeUnit.MILLISECONDS, linkedBlockingQueue);
         threadPoolExecutor.prestartAllCoreThreads();
         threadPoolExecutor.shutdown();
-        threadPoolExecutor.awaitTermination(5,TimeUnit.SECONDS);
+        threadPoolExecutor.awaitTermination(5, TimeUnit.SECONDS);
 
         /* output example
 pool-1-thread-2, localId=2

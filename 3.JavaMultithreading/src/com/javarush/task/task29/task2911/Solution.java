@@ -1,6 +1,5 @@
 package com.javarush.task.task29.task2911;
 
-import java.io.BufferedReader;
 import java.util.Random;
 import java.util.Scanner;
 

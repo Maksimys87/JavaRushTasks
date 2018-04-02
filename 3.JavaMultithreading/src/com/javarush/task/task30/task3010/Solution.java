@@ -11,7 +11,7 @@ public class Solution {
         String result = null;
         for (int i = 2; i <= 36; i++) {
             try {
-                result = new BigInteger(args[0],i).toString();
+                result = new BigInteger(args[0], i).toString();
                 System.out.println(i);
                 break;
             } catch (Exception e) {

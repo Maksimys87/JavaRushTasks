@@ -17,11 +17,8 @@ public class Solution {
     }
 
     public static Number convertNumberToOtherNumerationSystem(Number number, NumerationSystem expectedNumerationSystem) {
-      //  int i = Integer.parseInt(number.getDigit(),number.getNumerationSystem().getNumerationSystemIntValue());
-      //  String expectedNumSystemNumber = Integer.toString(i,expectedNumerationSystem.getNumerationSystemIntValue());
-      //  return new Number(expectedNumerationSystem,expectedNumSystemNumber);
-        BigInteger bigInteger = new BigInteger(number.getDigit(),number.getNumerationSystem().getNumerationSystemIntValue());
+        BigInteger bigInteger = new BigInteger(number.getDigit(), number.getNumerationSystem().getNumerationSystemIntValue());
         String expectedNumSystemNumber = bigInteger.toString(expectedNumerationSystem.getNumerationSystemIntValue());
-        return new Number(expectedNumerationSystem,expectedNumSystemNumber);
+        return new Number(expectedNumerationSystem, expectedNumSystemNumber);
     }
 }

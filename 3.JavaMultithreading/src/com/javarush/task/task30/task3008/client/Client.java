@@ -4,6 +4,7 @@ import com.javarush.task.task30.task3008.Connection;
 import com.javarush.task.task30.task3008.ConsoleHelper;
 import com.javarush.task.task30.task3008.Message;
 import com.javarush.task.task30.task3008.MessageType;
+
 import java.io.IOException;
 import java.net.Socket;
 
@@ -42,7 +43,7 @@ public class Client {
     protected void sendTextMessage(String text) {
         ConsoleHelper.writeMessage("Enter TextMessage");
         try {
-            connection.send(new Message(MessageType.TEXT,text));
+            connection.send(new Message(MessageType.TEXT, text));
         } catch (IOException e) {
             ConsoleHelper.writeMessage("Error sendTextMessage to Server");
             clientConnected = false;
@@ -54,20 +55,19 @@ public class Client {
         socketThread.setDaemon(true);
         socketThread.start();
         synchronized (this) {
-          //  while (!clientConnected) {
-                try {
-                    wait();
-                } catch (InterruptedException e) {
-                    ConsoleHelper.writeMessage("Error: Waiting was interrupted");
-                }
-          //  }
-           if (clientConnected) {
-               ConsoleHelper.writeMessage("Соединение установлено. Для выхода наберите команду 'exit'.");
-               String text;
-               while (clientConnected && (!(text = ConsoleHelper.readString()).equals("exit")))
-                   if (shouldSendTextFromConsole()) sendTextMessage(text);
-           }
-           else ConsoleHelper.writeMessage("Произошла ошибка во время работы клиента.");
+            //  while (!clientConnected) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                ConsoleHelper.writeMessage("Error: Waiting was interrupted");
+            }
+            //  }
+            if (clientConnected) {
+                ConsoleHelper.writeMessage("Соединение установлено. Для выхода наберите команду 'exit'.");
+                String text;
+                while (clientConnected && (!(text = ConsoleHelper.readString()).equals("exit")))
+                    if (shouldSendTextFromConsole()) sendTextMessage(text);
+            } else ConsoleHelper.writeMessage("Произошла ошибка во время работы клиента.");
         }
     }
 
@@ -95,13 +95,13 @@ public class Client {
             while (true) {
                 MessageType messageType = Client.this.connection.receive().getType();
                 if ((messageType == MessageType.NAME_REQUEST) || (messageType == MessageType.NAME_ACCEPTED)) {
-                    if (messageType == MessageType.NAME_REQUEST) Client.this.connection.send(new Message(MessageType.USER_NAME,getUserName()));
+                    if (messageType == MessageType.NAME_REQUEST)
+                        Client.this.connection.send(new Message(MessageType.USER_NAME, getUserName()));
                     if (messageType == MessageType.NAME_ACCEPTED) {
                         notifyConnectionStatusChanged(true);
                         break;
                     }
-                }
-                else throw new IOException("Unexpected MessageType");
+                } else throw new IOException("Unexpected MessageType");
             }
         }
 
@@ -113,8 +113,7 @@ public class Client {
                     if (messageType == MessageType.TEXT) processIncomingMessage(message.getData());
                     if (messageType == MessageType.USER_ADDED) informAboutAddingNewUser(message.getData());
                     if (messageType == MessageType.USER_REMOVED) informAboutDeletingNewUser(message.getData());
-                }
-                else throw new IOException("Unexpected MessageType");
+                } else throw new IOException("Unexpected MessageType");
             }
         }
 
@@ -122,7 +121,7 @@ public class Client {
             String serverAddress = getServerAddress();
             int serverPort = getServerPort();
             try {
-                Socket socket = new Socket(serverAddress,serverPort);
+                Socket socket = new Socket(serverAddress, serverPort);
                 connection = new Connection(socket);
                 clientHandshake();
                 clientMainLoop();

@@ -13,17 +13,16 @@ public class Solution {
         System.out.println(getRadix("123"));        //expected output: [6]
         System.out.println(getRadix("5321"));       //expected output: []
         System.out.println(getRadix("1A"));         //expected output: []
-      //  System.out.println(getRadix("888"));
     }
 
     private static Set<Integer> getRadix(String number) {
         Set<Integer> set = new HashSet<>();
         for (int i = 2; i <= 36; i++) {
             try {
-               String num = Integer.toUnsignedString (Integer.parseInt(number),i);
-               StringBuilder stringBuilder = new StringBuilder(num);
-               String reversNum = stringBuilder.reverse().toString();
-               if (num.equals(reversNum)) set.add(i);
+                String num = Integer.toUnsignedString(Integer.parseInt(number), i);
+                StringBuilder stringBuilder = new StringBuilder(num);
+                String reversNum = stringBuilder.reverse().toString();
+                if (num.equals(reversNum)) set.add(i);
             } catch (NumberFormatException e) {
 
             }

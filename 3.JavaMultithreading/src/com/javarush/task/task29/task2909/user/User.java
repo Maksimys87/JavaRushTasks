@@ -22,6 +22,7 @@ public class User {
         this.surname = surname;
         this.age = age;
     }
+
     public void printInfo() {
         System.out.println("Имя: " + getName());
         System.out.println("Фамилия: " + getSurname());
@@ -34,9 +35,9 @@ public class User {
             System.out.println("Пользователь старше 16 лет");
     }
 
-   public String getBoss() {
+    public String getBoss() {
         return this.work.getBoss();
-   }
+    }
 
     public String getCountry() {
         return address.getCountry();

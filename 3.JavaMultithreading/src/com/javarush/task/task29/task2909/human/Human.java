@@ -42,7 +42,7 @@ public class Human implements Alive {
     }
 
     public void setBloodGroup(BloodGroup bloodGroup) {
-       this.bloodGroup = bloodGroup;
+        this.bloodGroup = bloodGroup;
     }
 
     public BloodGroup getBloodGroup() {
@@ -56,13 +56,13 @@ public class Human implements Alive {
         nextId++;
     }
 
-   public String getPosition(){
+    public String getPosition() {
         return "Человек";
-   }
+    }
 
-   public void printData() {
-       System.out.println(getPosition() + ": " + name);
-   }
+    public void printData() {
+        System.out.println(getPosition() + ": " + name);
+    }
 
     @Override
     public void live() {
@@ -72,9 +72,11 @@ public class Human implements Alive {
     public List<Human> getChildren() {
         return Collections.unmodifiableList(children);
     }
+
     public void addChild(Human human) {
         children.add(human);
     }
+
     public void removeChild(Human human) {
         children.remove(human);
     }

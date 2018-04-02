@@ -5,7 +5,6 @@ public class UniversityPerson extends Human {
 
     public UniversityPerson(String name, int age) {
         super(name, age);
-       // this.university = university;
     }
 
     public University getUniversity() {

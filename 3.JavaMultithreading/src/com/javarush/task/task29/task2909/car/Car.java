@@ -29,12 +29,15 @@ public abstract class Car {
 
     public static Car create(int type, int numberOfPassengers) {
         switch (type) {
-            case TRUCK: return new Truck(numberOfPassengers);
-           // break;
-            case SEDAN: return new Sedan(numberOfPassengers);
-           // break;
-            case CABRIOLET: return new Cabriolet(numberOfPassengers);
-          //  break;
+            case TRUCK:
+                return new Truck(numberOfPassengers);
+
+            case SEDAN:
+                return new Sedan(numberOfPassengers);
+
+            case CABRIOLET:
+                return new Cabriolet(numberOfPassengers);
+
         }
         return null;
     }
@@ -44,25 +47,29 @@ public abstract class Car {
             throw new Exception();
         fuel += numberOfLiters;
     }
-    public boolean isSummer(Date date , Date summerStart, Date summerEnd){
+
+    public boolean isSummer(Date date, Date summerStart, Date summerEnd) {
         return date.after(summerStart) && date.before(summerEnd);
     }
+
     public double getWinterConsumption(int length) {
         return length * winterFuelConsumption + winterWarmingUp;
     }
+
     public double getSummerConsumption(int length) {
         return length * summerFuelConsumption;
     }
 
     public double getTripConsumption(Date date, int length, Date SummerStart, Date SummerEnd) {
         double consumption;
-        if (isSummer(date,SummerStart,SummerEnd)) {
+        if (isSummer(date, SummerStart, SummerEnd)) {
             consumption = getSummerConsumption(length);
         } else {
             consumption = getWinterConsumption(length);
         }
         return consumption;
     }
+
     private boolean canPassengersBeTransferred() {
         return isDriverAvailable() && (fuel > 0);
     }
@@ -83,7 +90,7 @@ public abstract class Car {
     public void startMoving() {
         if (numberOfPassengers > 0)
             fastenPassengersBelts();
-            fastenDriverBelt();
+        fastenDriverBelt();
     }
 
     public void fastenPassengersBelts() {

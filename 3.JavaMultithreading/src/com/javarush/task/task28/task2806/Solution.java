@@ -21,7 +21,7 @@ public class Solution {
             });
         }
         executorService.shutdown();
-        executorService.awaitTermination(5,TimeUnit.SECONDS);
+        executorService.awaitTermination(5, TimeUnit.SECONDS);
 
         /* output example
 pool-1-thread-2, localId=2
@@ -38,6 +38,6 @@ pool-1-thread-3, localId=8
     }
 
     private static void doExpensiveOperation(int localId) {
-        System.out.println(Thread.currentThread().getName() + ", localId="+localId);
+        System.out.println(Thread.currentThread().getName() + ", localId=" + localId);
     }
 }

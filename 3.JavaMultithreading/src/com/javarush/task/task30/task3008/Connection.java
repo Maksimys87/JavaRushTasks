@@ -33,6 +33,7 @@ public class Connection implements Closeable {
     public synchronized SocketAddress getRemoteSocketAddress() {
         return socket.getRemoteSocketAddress();
     }
+
     @Override
     public void close() throws IOException {
         socket.close();

@@ -5,7 +5,7 @@ public class Worker extends Human {
     private String company;
 
     public Worker(String name, int age) {
-        super(name,age);
+        super(name, age);
     }
 
     public void live() {

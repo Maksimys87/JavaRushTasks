@@ -29,6 +29,6 @@ public class Solution {
         } catch (URISyntaxException e) {
             e.printStackTrace();
         }
-        return  Paths.get(uri);
+        return Paths.get(uri);
     }
 }

@@ -19,8 +19,8 @@ public class MailServer implements Runnable {
                 }
             }
         }
-            String name = Thread.currentThread().getName();
-            long afterTime = System.currentTimeMillis();
-            System.out.format("%s MailServer has got: [%s] in %d ms after start", name, mail.getText(), (afterTime - beforeTime));
+        String name = Thread.currentThread().getName();
+        long afterTime = System.currentTimeMillis();
+        System.out.format("%s MailServer has got: [%s] in %d ms after start", name, mail.getText(), (afterTime - beforeTime));
     }
 }

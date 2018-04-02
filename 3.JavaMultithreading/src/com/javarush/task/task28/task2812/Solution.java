@@ -1,6 +1,5 @@
 package com.javarush.task.task28.task2812;
 
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -24,6 +23,6 @@ public class Solution {
     }
 
     private static void doExpensiveOperation(int localId) {
-        System.out.println(Thread.currentThread().getName() + ", localId="+localId);
+        System.out.println(Thread.currentThread().getName() + ", localId=" + localId);
     }
 }

@@ -39,7 +39,7 @@ public class University {
 
     public Student getStudentWithAverageGrade(double averageGrade) {
         //TODO:
-        for (Student std:students) {
+        for (Student std : students) {
             if (std.getAverageGrade() == averageGrade) return std;
         }
         return null;
@@ -48,10 +48,10 @@ public class University {
     public Student getStudentWithMaxAverageGrade() {
         //TODO:
         double max = 0;
-        for (Student std:students) {
+        for (Student std : students) {
             if (std.getAverageGrade() > max) max = std.getAverageGrade();
         }
-        for (Student std:students) {
+        for (Student std : students) {
             if (std.getAverageGrade() == max) return std;
         }
         return null;
@@ -59,14 +59,15 @@ public class University {
 
     public Student getStudentWithMinAverageGrade() {
         double min = students.get(0).getAverageGrade();
-        for (Student std:students) {
+        for (Student std : students) {
             if (std.getAverageGrade() < min) min = std.getAverageGrade();
         }
-        for (Student std:students) {
+        for (Student std : students) {
             if (std.getAverageGrade() == min) return std;
         }
         return null;
     }
+
     public void expel(Student student) {
         students.remove(student);
     }

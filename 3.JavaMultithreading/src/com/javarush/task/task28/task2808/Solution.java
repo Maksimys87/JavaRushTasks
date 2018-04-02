@@ -18,7 +18,7 @@ public class Solution {
 
         futures.add(executor.submit(getTask(10000000)));
 
-        for(Future<String> future : futures) {
+        for (Future<String> future : futures) {
             System.out.println(future.get());
         }
 
@@ -42,14 +42,7 @@ public class Solution {
     }
 
     public static Callable<String> getTask(final int i) {
-       /* return  () -> {
-            long count = 0;
-            for (int j = 0; j <= i; j++) {
-                count += j;
-            }
-            return String.valueOf(count);
-        };*/
-        return () -> ((long)i*(i+1))/2+"";
+        return () -> ((long) i * (i + 1)) / 2 + "";
     }
 
 }

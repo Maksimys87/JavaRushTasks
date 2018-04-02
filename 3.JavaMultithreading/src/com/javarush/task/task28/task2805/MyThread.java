@@ -11,7 +11,7 @@ public class MyThread extends Thread {
             atomicInteger.set(0);
             priority = atomicInteger.incrementAndGet();
         }
-            this.setPriority(priority);
+        this.setPriority(priority);
     }
 
     public MyThread() {

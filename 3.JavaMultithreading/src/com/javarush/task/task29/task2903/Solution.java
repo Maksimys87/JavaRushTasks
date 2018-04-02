@@ -32,13 +32,11 @@ public class Solution {
             public void run() {
                 final String name = "Thread #" + i;
                 int randomInt = RANDOM.nextInt(20);
-               // System.out.println("#" + name + " " + randomInt);
-               // System.out.println("##" + name + " " + ThreadLocalRandom.current().nextInt(20));
                 String text = name + " вставил запись для " + randomInt;
 
                 //previousEntry is null if it is new entry
                 /* instead of null - call concurrentMap.someMethodName(randomInt, text)*/
-                String previousEntry = concurrentMap.putIfAbsent(randomInt,text);
+                String previousEntry = concurrentMap.putIfAbsent(randomInt, text);
 
                 if (previousEntry != null) {
                     System.out.println(name + " хочет обновить " + randomInt + ", однако уже " + previousEntry);

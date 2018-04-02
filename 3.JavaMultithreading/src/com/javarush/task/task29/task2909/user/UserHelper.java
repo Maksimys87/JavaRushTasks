@@ -17,13 +17,10 @@ public class UserHelper {
     public int calculateAverageAge() {
         User userUra = new User("Юра", "Карп", 28);
 
-        return  (userAnya.getAge() + userRoma.getAge() + userUra.getAge()) / 3;
+        return (userAnya.getAge() + userRoma.getAge() + userUra.getAge()) / 3;
     }
 
     public int calculateRate(AtomicInteger base, int age, boolean hasWork, boolean hasHouse) {
-       /* int i = base.get() + age / 100;
-        i = (int) (base.get() * (hasWork ? 1.1 : 0.9));
-        i = (int) (base.get() * (hasHouse ? 1.1 : 0.9));*/
         int i = base.get() + age / 100;
         i = (int) (i * (hasWork ? 1.1 : 0.9));
         i = (int) (i * (hasHouse ? 1.1 : 0.9));
