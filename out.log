@@ -10709,3 +10709,34 @@ java.lang.Throwable: Assertion failed
 2018-04-05 15:28:02 WARN  JavaRushUtil.getCurrentTask(68) - Ошибка получения ключа задачи.
 2018-04-05 15:28:02 INFO  HttpsURLConnectionClient.getTask(486) - responseCode = 200
 2018-04-05 15:28:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:29:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:30:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:30:47 INFO  HttpsURLConnectionClient.getWebResourceAsStream(529) - responseCode = 200
+2018-04-05 15:30:48 INFO  HttpsURLConnectionClient.getFilteredTasks(270) - responseCode = 200
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.getTaskTemplateInfo(296) - responseCode = 200
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.testConnection(126) - resultHttp = true
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.testConnection(138) - Using proxy = false
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.testConnection(148) - resultHttps = true
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.testConnection(126) - resultHttp = true
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.testConnection(138) - Using proxy = false
+2018-04-05 15:30:51 INFO  HttpsURLConnectionClient.testConnection(148) - resultHttps = true
+2018-04-05 15:30:52 INFO  HttpsURLConnectionClient.getWebResourceAsStream(529) - responseCode = 200
+2018-04-05 15:31:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:32:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:33:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:34:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:35:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:36:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:37:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:38:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:39:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:40:16 INFO  HttpsURLConnectionClient.getWebResourceAsStream(529) - responseCode = 200
+2018-04-05 15:40:16 INFO  HttpsURLConnectionClient.getTask(486) - responseCode = 200
+2018-04-05 15:40:18 INFO  HttpsURLConnectionClient.manualComplete(33) - responseCode = 200
+2018-04-05 15:40:18 INFO  HttpsURLConnectionClient.getTask(486) - responseCode = 200
+2018-04-05 15:40:21 INFO  HttpsURLConnectionClient.getWebResourceAsStream(529) - responseCode = 200
+2018-04-05 15:40:21 WARN  JavaRushUtil.getCurrentTask(68) - Ошибка получения ключа задачи.
+2018-04-05 15:40:21 INFO  HttpsURLConnectionClient.getTask(486) - responseCode = 200
+2018-04-05 15:40:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:41:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
+2018-04-05 15:42:44 INFO  HttpsURLConnectionClient.sendEvent(580) - responseCode = 200
