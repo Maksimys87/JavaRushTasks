@@ -8,7 +8,7 @@ import java.io.*;
 
 public class Controller {
     private View view;
-    private HTMLDocument document = new HTMLDocument();
+    private HTMLDocument document;
     private File currentFile;
 
     public Controller(View view) {
@@ -101,10 +101,10 @@ public class Controller {
     public void resetDocument() {
         if (document != null) {
             document.removeUndoableEditListener(view.getUndoListener());
-            document = (HTMLDocument) new HTMLEditorKit().createDefaultDocument();
-            document.addUndoableEditListener(view.getUndoListener());
-            view.update();
         }
+        document = (HTMLDocument) new HTMLEditorKit().createDefaultDocument();
+        document.addUndoableEditListener(view.getUndoListener());
+        view.update();
     }
 
     public void setPlainText(String text) {
