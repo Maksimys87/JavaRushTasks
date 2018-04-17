@@ -14,8 +14,7 @@ public class Solution {
         TreeSet<Character> treeSet = new TreeSet<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(args[0]))) {
             while (reader.ready()) {
-                String line = reader.readLine().toLowerCase();
-                char[] chars = line.toCharArray();
+                char[] chars = reader.readLine().toLowerCase().toCharArray();
                 for (char c : chars) {
                     if (c > 96) treeSet.add(c);
                 }
