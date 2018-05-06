@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="4.JavaCollections" />
         <module name="JavaRushTasks" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JavaRushTasks" target="1.5" />
+      <module name="3.JavaMultithreading" target="9" />
+      <module name="4.JavaCollections" target="9" />
+      <module name="JavaRushTasks" target="9" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
