@@ -31,14 +31,14 @@ public class Solution<T> extends ArrayList<T> {
 
     public class RoundIterator implements Iterator<T> {
         Iterator<T> iterator = Solution.super.iterator();
-        int cursor = 0;
+        int cursor;
 
         @Override
         public boolean hasNext() {
             if (size() == 0)
                 return false;
 
-            if (cursor >= size()) {
+            if (cursor == size()) {
                 iterator = Solution.super.iterator();
                 cursor = 0;
             }
