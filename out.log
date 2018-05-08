@@ -6154,3 +6154,33 @@ java.lang.annotation.IncompleteAnnotationException: org.intellij.lang.annotation
 2018-05-08 23:27:37 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
 2018-05-08 23:27:38 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
 2018-05-08 23:28:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:29:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:29:47 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-08 23:29:48 INFO  ApacheHttpClient.getFilteredTasks(323) - responseCode = 200
+2018-05-08 23:29:51 INFO  ApacheHttpClient.getTaskTemplateInfo(340) - responseCode = 200
+2018-05-08 23:29:52 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-08 23:29:52 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-08 23:29:52 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-08 23:29:52 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-08 23:29:52 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-08 23:30:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:31:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:32:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:33:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:34:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:35:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:36:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:37:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:38:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:39:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:40:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:41:09 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-08 23:41:10 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-08 23:41:10 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-08 23:41:12 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-05-08 23:41:12 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-08 23:41:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-08 23:41:14 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-08 23:41:14 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
+2018-05-08 23:41:15 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-08 23:42:13 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
