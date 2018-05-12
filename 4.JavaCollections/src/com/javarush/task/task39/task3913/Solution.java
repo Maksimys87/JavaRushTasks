@@ -12,6 +12,8 @@ public class Solution {
     public static void main(String[] args) {
         LogParser logParser = new LogParser(Paths.get("c:/logs/"));
         /*System.out.println(logParser.getNumberOfUniqueIPs(null, null));
+
+
         // Set<String> set = logParser.getIPsForUser("Amigo", null, null);
         //  Set<String> set = logParser.getIPsForEvent(Event.DONE_TASK, null, null);
         Set<String> set = logParser.getLoggedUsers(null, null);
@@ -30,12 +32,10 @@ public class Solution {
         treeSet.add(null);
         System.out.println(treeSet.first());
         System.out.println(treeSet.last());*/
-        Set<Date> set = new HashSet<>();
-        set.add(null);
-        set.add(null);
-        for (Date d:set) {
-            System.out.println(d);
+       //Set<Object> objects = logParser.execute("get status for ip = \"127.0.0.1\"");
+        Set<Object> objects = logParser.execute("get date");
+        for (Object o : objects) {
+            System.out.println(o);
         }
-        logParser.getDatesForUserAndEvent(null,null,null,null);
     }
 }
