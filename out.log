@@ -8828,3 +8828,316 @@ java.lang.NullPointerException
 2018-05-14 21:19:34 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
 2018-05-14 21:19:34 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
 2018-05-14 21:19:34 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:20:26 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:20:26 INFO  ApacheHttpClient.getFilteredTasks(323) - responseCode = 200
+2018-05-14 21:20:28 INFO  ApacheHttpClient.getTaskTemplateInfo(340) - responseCode = 200
+2018-05-14 21:20:29 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-14 21:20:29 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-14 21:20:29 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-14 21:20:29 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-14 21:20:29 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:20:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:21:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:22:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:23:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:24:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:25:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:26:07 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:26:07 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:26:07 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:26:09 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-05-14 21:26:09 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:26:11 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:26:11 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
+2018-05-14 21:26:12 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:26:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:27:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:28:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:29:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:30:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:31:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:32:24 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:32:24 INFO  ApacheHttpClient.getFilteredTasks(323) - responseCode = 200
+2018-05-14 21:32:31 INFO  ApacheHttpClient.getTaskTemplateInfo(340) - responseCode = 200
+2018-05-14 21:32:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:32:31 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-14 21:32:31 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-14 21:32:31 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-14 21:32:31 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-14 21:32:32 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:33:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:34:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:34:52 ERROR PassExecutorService.error(118) - com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+java.lang.ClassCastException: com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase.findReferences(TooBroadScopeInspectionBase.java:243)
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase$TooBroadScopeVisitor.visitLocalVariable(TooBroadScopeInspectionBase.java:268)
+	at com.intellij.psi.impl.source.tree.java.PsiLocalVariableImpl.accept(PsiLocalVariableImpl.java:294)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:75)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:63)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.lambda$collectIntentionsFromDoNotShowLeveledInspections$3(ShowIntentionsPass.java:461)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1129)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:99)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecCC(ForkJoinPool.java:1190)
+	at java.util.concurrent.ForkJoinPool.helpComplete(ForkJoinPool.java:1879)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2045)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at java.util.concurrent.ForkJoinPool.invoke(ForkJoinPool.java:2616)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:57)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.collectIntentionsFromDoNotShowLeveledInspections(ShowIntentionsPass.java:468)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getActionsToShow(ShowIntentionsPass.java:364)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getIntentionActionsToShow(ShowIntentionsPass.java:269)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.doCollectInformation(ShowIntentionsPass.java:245)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:70)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$null$1(PassExecutorService.java:437)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:430)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:429)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:405)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:218)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:403)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:170)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-05-14 21:34:52 ERROR PassExecutorService.logErrorHeader(126) - IntelliJ IDEA 2018.1  Build #IC-181.4203.550
+2018-05-14 21:34:52 ERROR PassExecutorService.logErrorHeader(133) - JDK: 1.8.0_152-release
+2018-05-14 21:34:52 ERROR PassExecutorService.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2018-05-14 21:34:52 ERROR PassExecutorService.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2018-05-14 21:34:52 ERROR PassExecutorService.logErrorHeader(136) - OS: Windows 10
+2018-05-14 21:34:52 ERROR PassExecutorService.logErrorHeader(142) - Last Action: EditorPaste
+2018-05-14 21:34:53 ERROR PassExecutorService.error(118) - com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+java.lang.ClassCastException: com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase.findReferences(TooBroadScopeInspectionBase.java:243)
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase$TooBroadScopeVisitor.visitLocalVariable(TooBroadScopeInspectionBase.java:268)
+	at com.intellij.psi.impl.source.tree.java.PsiLocalVariableImpl.accept(PsiLocalVariableImpl.java:294)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:75)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:63)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.lambda$collectIntentionsFromDoNotShowLeveledInspections$3(ShowIntentionsPass.java:461)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1129)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:99)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecCC(ForkJoinPool.java:1190)
+	at java.util.concurrent.ForkJoinPool.helpComplete(ForkJoinPool.java:1879)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2045)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at java.util.concurrent.ForkJoinPool.invoke(ForkJoinPool.java:2616)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:57)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.collectIntentionsFromDoNotShowLeveledInspections(ShowIntentionsPass.java:468)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getActionsToShow(ShowIntentionsPass.java:364)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getIntentionActionsToShow(ShowIntentionsPass.java:269)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.doCollectInformation(ShowIntentionsPass.java:245)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:70)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$null$1(PassExecutorService.java:437)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:430)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:429)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:405)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:218)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:403)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:170)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(126) - IntelliJ IDEA 2018.1  Build #IC-181.4203.550
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(133) - JDK: 1.8.0_152-release
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(136) - OS: Windows 10
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(142) - Last Action: EditorPaste
+2018-05-14 21:34:53 ERROR PassExecutorService.error(118) - com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+java.lang.ClassCastException: com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase.findReferences(TooBroadScopeInspectionBase.java:243)
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase$TooBroadScopeVisitor.visitLocalVariable(TooBroadScopeInspectionBase.java:268)
+	at com.intellij.psi.impl.source.tree.java.PsiLocalVariableImpl.accept(PsiLocalVariableImpl.java:294)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:75)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:63)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.lambda$collectIntentionsFromDoNotShowLeveledInspections$3(ShowIntentionsPass.java:461)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1129)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:99)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecCC(ForkJoinPool.java:1190)
+	at java.util.concurrent.ForkJoinPool.helpComplete(ForkJoinPool.java:1879)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2045)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at java.util.concurrent.ForkJoinPool.invoke(ForkJoinPool.java:2616)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:57)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.collectIntentionsFromDoNotShowLeveledInspections(ShowIntentionsPass.java:468)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getActionsToShow(ShowIntentionsPass.java:364)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getIntentionActionsToShow(ShowIntentionsPass.java:269)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.doCollectInformation(ShowIntentionsPass.java:245)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:70)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$null$1(PassExecutorService.java:437)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:430)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:429)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:405)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:218)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:403)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:170)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(126) - IntelliJ IDEA 2018.1  Build #IC-181.4203.550
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(133) - JDK: 1.8.0_152-release
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(136) - OS: Windows 10
+2018-05-14 21:34:53 ERROR PassExecutorService.logErrorHeader(142) - Last Action: EditorPaste
+2018-05-14 21:34:58 ERROR PassExecutorService.error(118) - com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+java.lang.ClassCastException: com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase.findReferences(TooBroadScopeInspectionBase.java:243)
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase$TooBroadScopeVisitor.visitLocalVariable(TooBroadScopeInspectionBase.java:268)
+	at com.intellij.psi.impl.source.tree.java.PsiLocalVariableImpl.accept(PsiLocalVariableImpl.java:294)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:75)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:63)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.lambda$collectIntentionsFromDoNotShowLeveledInspections$3(ShowIntentionsPass.java:461)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1129)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:99)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecCC(ForkJoinPool.java:1190)
+	at java.util.concurrent.ForkJoinPool.helpComplete(ForkJoinPool.java:1879)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2045)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at java.util.concurrent.ForkJoinPool.invoke(ForkJoinPool.java:2616)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:57)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.collectIntentionsFromDoNotShowLeveledInspections(ShowIntentionsPass.java:468)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getActionsToShow(ShowIntentionsPass.java:364)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getIntentionActionsToShow(ShowIntentionsPass.java:269)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.doCollectInformation(ShowIntentionsPass.java:245)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:70)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$null$1(PassExecutorService.java:437)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:430)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:429)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:405)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:218)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:403)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:170)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(126) - IntelliJ IDEA 2018.1  Build #IC-181.4203.550
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(133) - JDK: 1.8.0_152-release
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(136) - OS: Windows 10
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(142) - Last Action: EditorBackSpace
+2018-05-14 21:34:58 ERROR PassExecutorService.error(118) - com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+java.lang.ClassCastException: com.intellij.psi.impl.source.PsiJavaCodeReferenceElementImpl cannot be cast to com.intellij.psi.PsiReferenceExpression
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase.findReferences(TooBroadScopeInspectionBase.java:243)
+	at com.siyeh.ig.dataflow.TooBroadScopeInspectionBase$TooBroadScopeVisitor.visitLocalVariable(TooBroadScopeInspectionBase.java:268)
+	at com.intellij.psi.impl.source.tree.java.PsiLocalVariableImpl.accept(PsiLocalVariableImpl.java:294)
+	at com.intellij.codeInspection.InspectionEngine.acceptElements(InspectionEngine.java:75)
+	at com.intellij.codeInspection.InspectionEngine.createVisitorAndAcceptElements(InspectionEngine.java:63)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.lambda$collectIntentionsFromDoNotShowLeveledInspections$3(ShowIntentionsPass.java:461)
+	at com.intellij.concurrency.ApplierCompleter.execAndForkSubTasks(ApplierCompleter.java:133)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1129)
+	at com.intellij.concurrency.ApplierCompleter.lambda$wrapInReadActionAndIndicator$1(ApplierCompleter.java:105)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.concurrency.ApplierCompleter.wrapInReadActionAndIndicator(ApplierCompleter.java:116)
+	at com.intellij.concurrency.ApplierCompleter.compute(ApplierCompleter.java:99)
+	at java.util.concurrent.CountedCompleter.exec(CountedCompleter.java:731)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.pollAndExecCC(ForkJoinPool.java:1190)
+	at java.util.concurrent.ForkJoinPool.helpComplete(ForkJoinPool.java:1879)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2045)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at java.util.concurrent.ForkJoinPool.invoke(ForkJoinPool.java:2616)
+	at com.intellij.concurrency.JobLauncherImpl.invokeConcurrentlyUnderProgress(JobLauncherImpl.java:65)
+	at com.intellij.concurrency.JobLauncher.invokeConcurrentlyUnderProgress(JobLauncher.java:57)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.collectIntentionsFromDoNotShowLeveledInspections(ShowIntentionsPass.java:468)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getActionsToShow(ShowIntentionsPass.java:364)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.getIntentionActionsToShow(ShowIntentionsPass.java:269)
+	at com.intellij.codeInsight.daemon.impl.ShowIntentionsPass.doCollectInformation(ShowIntentionsPass.java:245)
+	at com.intellij.codeHighlighting.TextEditorHighlightingPass.collectInformation(TextEditorHighlightingPass.java:70)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$null$1(PassExecutorService.java:437)
+	at com.intellij.openapi.application.impl.ApplicationImpl.tryRunReadAction(ApplicationImpl.java:1134)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$doRun$2(PassExecutorService.java:430)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.registerIndicatorAndRun(CoreProgressManager.java:580)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.executeProcessUnderProgress(CoreProgressManager.java:525)
+	at com.intellij.openapi.progress.impl.ProgressManagerImpl.executeProcessUnderProgress(ProgressManagerImpl.java:85)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.doRun(PassExecutorService.java:429)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.lambda$run$0(PassExecutorService.java:405)
+	at com.intellij.openapi.application.impl.ReadMostlyRWLock.executeByImpatientReader(ReadMostlyRWLock.java:143)
+	at com.intellij.openapi.application.impl.ApplicationImpl.executeByImpatientReader(ApplicationImpl.java:218)
+	at com.intellij.codeInsight.daemon.impl.PassExecutorService$ScheduledPass.run(PassExecutorService.java:403)
+	at com.intellij.concurrency.JobLauncherImpl$VoidForkJoinTask$1.exec(JobLauncherImpl.java:170)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(126) - IntelliJ IDEA 2018.1  Build #IC-181.4203.550
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(133) - JDK: 1.8.0_152-release
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(134) - VM: OpenJDK 64-Bit Server VM
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(135) - Vendor: JetBrains s.r.o
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(136) - OS: Windows 10
+2018-05-14 21:34:58 ERROR PassExecutorService.logErrorHeader(142) - Last Action: EditorBackSpace
+2018-05-14 21:35:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:35:59 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:36:00 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:36:00 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:36:01 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-05-14 21:36:02 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:36:04 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:36:04 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
+2018-05-14 21:36:04 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
