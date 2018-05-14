@@ -8812,3 +8812,19 @@ java.lang.NullPointerException
 2018-05-14 21:11:09 INFO  ApacheHttpClient.testConnection(195) - result = true
 2018-05-14 21:11:09 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
 2018-05-14 21:11:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:12:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:13:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:14:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:15:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:16:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:17:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:18:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:19:29 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:19:30 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:19:30 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:19:31 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-14 21:19:31 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-05-14 21:19:32 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-14 21:19:34 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-14 21:19:34 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
+2018-05-14 21:19:34 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
