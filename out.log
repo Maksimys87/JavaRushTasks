@@ -9412,3 +9412,24 @@ java.lang.ClassCastException: com.intellij.psi.impl.source.PsiJavaCodeReferenceE
 2018-05-27 13:35:55 INFO  ApacheHttpClient.getTaskTemplateInfo(340) - responseCode = 200
 2018-05-27 13:35:57 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
 2018-05-27 13:35:57 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-27 13:35:58 INFO  ApacheHttpClient.testConnection(187) - responseCode = 200
+2018-05-27 13:35:58 INFO  ApacheHttpClient.testConnection(195) - result = true
+2018-05-27 13:35:58 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-27 13:36:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-27 13:37:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-27 13:38:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-27 13:39:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-27 13:40:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-27 13:41:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
+2018-05-27 13:42:09 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-27 13:42:09 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-27 13:42:10 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-27 13:42:11 INFO  ApacheHttpClient.completed(27) - responseCode = 200
+2018-05-27 13:42:12 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-27 13:42:16 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-27 13:42:16 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
+2018-05-27 13:42:16 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-27 13:42:27 INFO  ApacheHttpClient.getWebResourceAsStream(436) - responseCode = 200
+2018-05-27 13:42:27 WARN  JavaRushUtil.getCurrentTask(66) - Ошибка получения ключа задачи.
+2018-05-27 13:42:27 INFO  ApacheHttpClient.getTask(421) - responseCode = 200
+2018-05-27 13:42:41 INFO  ApacheHttpClient.sendEvent(469) - responseCode = 200
